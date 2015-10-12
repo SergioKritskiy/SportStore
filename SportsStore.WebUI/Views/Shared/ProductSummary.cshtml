@@ -1,7 +1,12 @@
 ﻿@model SportsStore.Domain.Entities.Product
 
 <div class="item">   
-    <h3>Имя модели: @Model.Name</h3> Описание:   @Model.Description   
+    <h3>Имя модели: @Model.Name</h3> Описание:   @Model.Description 
+    @using (Html.BeginForm("AddToCart","Cart")){
+    @Html.HiddenFor(x=>x.ProductID)
+    @Html.Hidden("returnUrl",Request.Url.PathAndQuery)
+        <input type="submit" value=" Add to cart"/>
+    }  
     <h4>Цена: @Model.Price.ToString("c")</h4> 
     <h5>Категория: @Model.Category</h5>
 </div>
