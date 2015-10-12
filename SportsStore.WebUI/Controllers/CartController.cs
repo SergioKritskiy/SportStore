@@ -15,19 +15,19 @@ namespace SportsStore.WebUI.Controllers
         public CartController(IProductRepository repo) {
             repository = repo;
         }
-        public RedirectToRouteResult AddToCart(int productId,string returnUrl) {
+        public RedirectToRouteResult AddToCart(Cart cart,int productId,string returnUrl) {
             Product prod = repository.Products.FirstOrDefault(p => p.ProductID == productId);
             if (prod!=null){
-                GetCard().AddItem(prod, 1);
+                cart.AddItem(prod, 1);
             }
             return RedirectToAction("Index", new { returnUrl });
         }
 
-        public RedirectToRouteResult RemoveFromCart(int productId, string returnUrl) {
+        public RedirectToRouteResult RemoveFromCart(Cart cart,int productId, string returnUrl) {
         
             Product prod = repository.Products.FirstOrDefault(p=>p.ProductID==productId);
             if (prod!=null){
-            GetCard().RemoveLine(prod);
+            cart.RemoveLine(prod);
             }
             return RedirectToAction("Index", new { returnUrl });
         }
@@ -40,12 +40,16 @@ namespace SportsStore.WebUI.Controllers
             }
             return cart;
         }
-        public ViewResult Index(string returnUrl) {
+        public ViewResult Index(Cart cart ,string returnUrl) {
             return View(new CartIndexViewModel
             {
-                Cart = GetCard(),
+                Cart = cart,
                 ReturnUrl = returnUrl
             });
+        }
+
+        public PartialViewResult Summary(Cart cart) {
+            return PartialView(cart);
         }
     }
 }
