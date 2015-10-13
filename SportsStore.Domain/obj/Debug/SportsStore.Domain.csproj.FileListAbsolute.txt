@@ -1,6 +1,5 @@
 C:\projects\SportStore\SportStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll
 C:\projects\SportStore\SportStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.pdb
-C:\projects\SportStore\SportStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
 C:\projects\SportStore\SportStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
 C:\projects\SportStore\SportStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
 C:\projects\SportStore\SportStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll.config
