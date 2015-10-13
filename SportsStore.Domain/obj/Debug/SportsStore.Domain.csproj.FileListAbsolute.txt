@@ -5,4 +5,3 @@ C:\projects\SportStore\SportStore\SportsStore.Domain\obj\Debug\SportsStore.Domai
 C:\projects\SportStore\SportStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll.config
 C:\projects\SportStore\SportStore\SportsStore.Domain\bin\Debug\EntityFramework.dll
 C:\projects\SportStore\SportStore\SportsStore.Domain\bin\Debug\EntityFramework.xml
-C:\projects\SportStore\SportStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
