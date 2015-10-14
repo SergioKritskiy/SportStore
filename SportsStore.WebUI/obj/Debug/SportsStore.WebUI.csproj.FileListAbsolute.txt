@@ -74,3 +74,5 @@ D:\Projects\SportStore\SportsStore.WebUI\bin\System.Web.WebPages.Razor.xml
 D:\Projects\SportStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.csprojResolveAssemblyReference.cache
 D:\Projects\SportStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.dll
 D:\Projects\SportStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.pdb
+C:\projects\SportStore\SportStore\SportsStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\projects\SportStore\SportStore\SportsStore.WebUI\bin\EntityFramework.SqlServer.xml

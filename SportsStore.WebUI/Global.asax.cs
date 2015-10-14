@@ -9,6 +9,8 @@ using System.Web.Routing;
 using SportsStore.WebUI.Infrastructure;
 using SportsStore.Domain.Entities;
 using SportsStore.WebUI.Binders;
+using System.Data.Entity;
+using SportsStore.Domain.Concrete;
 namespace SportsStore.WebUI
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
@@ -24,9 +26,9 @@ namespace SportsStore.WebUI
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
+            Database.SetInitializer<EFDbContext>(null);
             ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
-            ModelBinders.Binders.Add(typeof(Cart),new CartModelBinder());
+            ModelBinders.Binders.Add(typeof(Cart), new CartModelBinder());
         }
     }
 }
